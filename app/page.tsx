@@ -193,7 +193,10 @@ export default function ZombieGame() {
       <audio ref={femaleAudioRef} src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/female_zombie.mp3-oOuurQqpe0WLXVug3NOBTIhnwEi2Zm.mp3" preload="auto" />
 
       <div className="absolute top-4 left-4 z-10 bg-black/70 px-6 py-3 rounded-lg">
-        <p className="text-white text-2xl font-bold">Rialo: {score}$</p>
+        <div className="flex items-center gap-2">
+          <img src="/images/rialo-logo.png" alt="Rialo" className="w-8 h-8 object-contain" />
+          <p className="text-white text-2xl font-bold">Rialo: {score}$</p>
+        </div>
       </div>
 
       <div className="absolute top-4 right-4 z-10 flex gap-2">
